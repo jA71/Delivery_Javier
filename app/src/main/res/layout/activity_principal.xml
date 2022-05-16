@@ -4,6 +4,163 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".interface_user.Principal">
+    tools:context=".interface_user.Principal"
+    android:background="@drawable/fondo4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-201dp"
+        tools:layout_editor_absoluteY="53dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_accept"
+                style="@style/btn_accept"
+                android:layout_marginTop="@dimen/top_order_bt"
+                android:background="@drawable/custom_button"
+                android:text="@string/accept"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toLeftOf="@+id/mail_label"
+                app:layout_constraintRight_toRightOf="@+id/mail_label"
+                app:layout_constraintTop_toBottomOf="@+id/mail_label"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_back"
+                style="@style/btn_exit"
+                android:layout_marginTop="@dimen/top_order_bt"
+                android:background="@drawable/custom_button"
+                android:text="@string/logout"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toLeftOf="@+id/mail_label"
+                app:layout_constraintRight_toRightOf="@+id/mail_label"
+                app:layout_constraintTop_toBottomOf="@+id/mail_label"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_data"
+                style="@style/tittle"
+                android:layout_marginLeft="@dimen/border_left_right"
+                android:layout_marginTop="@dimen/top_order_tittle_2"
+                android:layout_marginRight="@dimen/border_left_right"
+                android:gravity="center_horizontal"
+                android:text="@string/msg"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="@+id/text_user"
+                app:layout_constraintRight_toRightOf="@+id/text_user"
+                app:layout_constraintTop_toBottomOf="@+id/text_user"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_user"
+                style="@style/letters"
+                android:layout_marginTop="@dimen/top_order_user"
+                android:background="@drawable/custom_input"
+                android:text="@string/user"
+                app:layout_constraintLeft_toLeftOf="@+id/text_data"
+                app:layout_constraintRight_toRightOf="@+id/text_data"
+                app:layout_constraintTop_toBottomOf="@+id/text_data"
+                app:layout_constraintTop_toTopOf="parent"
+                app:startIconDrawable="@drawable/user" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/name_label"
+                style="@style/letters"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_input"
+                android:hint="@string/name"
+                android:textColorHint="@color/black"
+                app:layout_constraintLeft_toLeftOf="@+id/text_user"
+                app:layout_constraintRight_toRightOf="@+id/text_user"
+                app:layout_constraintTop_toBottomOf="@+id/text_user"
+                app:startIconDrawable="@drawable/data">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name_label2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textUri"
+                    android:textColor="@color/black"></com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/last_name_label"
+                style="@style/letters"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_input"
+                android:hint="@string/last_name"
+                android:textColorHint="@color/black"
+                app:layout_constraintLeft_toLeftOf="@+id/name_label"
+                app:layout_constraintRight_toRightOf="@+id/name_label"
+                app:layout_constraintTop_toBottomOf="@+id/name_label"
+                app:startIconDrawable="@drawable/data">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name_label3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textUri"
+                    android:textColor="@color/dark_grey">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phone_label"
+                style="@style/letters"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_input"
+                android:hint="@string/phone_data"
+                android:textColorHint="@color/black"
+                app:layout_constraintLeft_toLeftOf="@+id/last_name_label"
+                app:layout_constraintRight_toRightOf="@+id/last_name_label"
+                app:layout_constraintTop_toBottomOf="@+id/last_name_label"
+                app:startIconDrawable="@drawable/phone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name_label4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text|number"
+                    android:textColor="@color/dark_grey">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/mail_label"
+                style="@style/letters"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_input"
+                android:hint="@string/email_data"
+                android:textColorHint="@color/black"
+                app:layout_constraintLeft_toLeftOf="@+id/phone_label"
+                app:layout_constraintRight_toRightOf="@+id/phone_label"
+                app:layout_constraintTop_toBottomOf="@+id/phone_label"
+                app:startIconDrawable="@drawable/email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name_label5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

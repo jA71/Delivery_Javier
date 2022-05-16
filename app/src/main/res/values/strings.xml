@@ -1,7 +1,16 @@
 <resources>
-    <string name="app_name">Delivery_Javier</string>
-    <string name="user">User</string>
-    <string name="password">Password</string>
-    <string name="login">LOGIN</string>
-    <string name="tittle">HELLO THERE</string>
+    <string name="app_name">INGRESO AL SISTEMA</string>
+    <string name="starup_msg">INGRESE SUS DATOS</string>
+    <string name="login">Ingresar</string>
+    <string name="register">Registrar</string>
+    <string name="password">Contraseña</string>
+    <string name="msg">BIENVENIDO</string>
+    <string name="user">Usuario</string>
+    <string name="phone_data">Teléfono</string>
+    <string name="email_data">Email</string>
+    <string name="password_data">CONTRASEÑA</string>
+    <string name="logout">Salir</string>
+    <string name="accept">Aceptar</string>
+    <string name="name">Nombre</string>
+    <string name="last_name">Apellido</string>
 </resources>

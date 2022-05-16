@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <dimen name="top_order">120dip</dimen>
-    <dimen name="border_left_right">40dip</dimen>
+    <dimen name="top_order">80dp</dimen>
+    <dimen name="border_left_right">80dp</dimen>
     <dimen name="text_height">24dip</dimen>
     <dimen name="top_order_ps">240dip</dimen>
-    <dimen name="top_order_bt">320dip</dimen>
-    <dimen name="border_left_right_bt">80dip</dimen>
-    <dimen name="border_left_right_title">100dip</dimen>
+    <dimen name="top_order_bt">650dip</dimen>
+    <dimen name="border_left_right_bt">100dip</dimen>
+    <dimen name="border_left_right_title">80dip</dimen>
     <dimen name="top_order_tittle">80dip</dimen>
     <dimen name="text_height_title">20dip</dimen>
-
+    <dimen name="top_order_tittle_2">260dip</dimen>
+    <dimen name="top_order_user">300dip</dimen>
+    <dimen name="btn_exit_left">220dip</dimen>
+    <dimen name="btn_exit_r">40dip</dimen>
+    <dimen name="btn_accept_r">220dip</dimen>
+    <dimen name="btn_accept_l">40dip</dimen>
 </resources>

@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Delivery_Javier</string>
-    <string name="user">User</string>
+    <string name="app_name">INGRESO AL SISTEMA</string>
+    <string name="starup_msg">ENTER YOUR DATA</string>
+    <string name="login">Log In</string>
+    <string name="register">Sign Up</string>
     <string name="password">Password</string>
-    <string name="login">LOGIN</string>
-    <string name="tittle">HELLO THERE</string>
+    <string name="msg">WELCOME</string>
+    <string name="user">User</string>
+    <string name="phone_data">Phone</string>
+    <string name="email_data">Email</string>
+    <string name="password_data">PASSWORD</string>
+    <string name="logout">Exit</string>
+    <string name="accept">Accept</string>
+    <string name="name">Name</string>
+    <string name="last_name">Last Name</string>
 </resources>
